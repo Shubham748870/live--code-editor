@@ -1,0 +1,184 @@
+/* Reset and global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1c1e29;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Home Wrapper */
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Wrapper */
+.formWrapper {
+  background: #252738;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 370px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideUp 0.9s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+.formWrapper img {
+  width: 90px;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Label */
+.mainLabel {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e4e6eb;
+}
+
+/* Input group */
+.inputGroup {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inputBox {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2130;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+.inputBox:focus {
+  background: #27293d;
+  box-shadow: 0 0 12px rgba(74, 144, 226, 0.8),
+    0 0 18px rgba(74, 144, 226, 0.6);
+}
+
+/* Button */
+.btn {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.joinBtn {
+  background: linear-gradient(135deg, #4a90e2, #357ab7);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.6),
+    0 0 14px rgba(74, 144, 226, 0.4);
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+.joinBtn:hover {
+  background: linear-gradient(135deg, #5aa3f0, #3f6cb3);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.9),
+    0 0 25px rgba(74, 144, 226, 0.7);
+}
+
+/* Create Info */
+.createInfo {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #c5c6d0;
+}
+
+.createNewBtn {
+  color: #4a90e2;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.createNewBtn:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(74, 144, 226, 0.8);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #bbb;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+footer a {
+  color: #9b59b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(155, 89, 182, 0.9);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Pulsing Glow Effect */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6),
+      0 0 14px rgba(74, 144, 226, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.9),
+      0 0 35px rgba(74, 144, 226, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6),
+      0 0 14px rgba(74, 144, 226, 0.4);
+  }
+}
