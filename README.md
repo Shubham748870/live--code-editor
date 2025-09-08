@@ -1,3 +1,49 @@
+
+
+📑 Project Report - Live Code Editor
+Project Title
+Live Code Editor
+________________________________________
+Introduction
+The Live Code Editor is a collaborative platform that enables multiple users to write, edit, and preview code in real time. It provides instant updates across all connected clients, making it suitable for pair programming, coding interviews, and collaborative learning.
+________________________________________
+Project Objectives
+•	Develop a real-time collaborative code editor.
+•	Support multiple users joining and leaving rooms.
+•	Provide instant synchronization of code across all users.
+•	Allow live preview of written code.
+•	Ensure smooth user experience with notifications (join/leave).
+________________________________________
+Technology Stack
+•	Frontend: React.js, CodeMirror, Monaco Editor, React Hot Toast
+•	Backend: Node.js, Express.js, Socket.IO
+•	Styling: CSS, Tailwind
+•	Tools: WebSockets for real-time communication
+________________________________________
+System Features
+•	User can create or join a room using a unique Room ID.
+•	Connected users are displayed in the sidebar.
+•	Users receive notifications when others join or leave.
+•	Live code preview updates instantly as the user types.
+•	Option to switch between Monaco and CodeMirror editors.
+•	Room code is persisted so new users see existing code upon joining.
+________________________________________
+Conclusion
+This project successfully demonstrates a real-time collaborative coding platform. It is useful for developers, students, and educators to collaborate and learn together. Future enhancements may include syntax error highlighting, multi-file support, and integration with cloud storage for persistent project saving.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
