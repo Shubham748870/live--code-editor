@@ -1,0 +1,239 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* === Layout === */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 250px;
+  background: #111827;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 1px solid #1f2937;
+}
+
+/* === User Profile / Client === */
+.client,
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #1f2937;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.client:hover,
+.userProfile:hover {
+  background: #1e293b;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4cafef, #6a5acd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.userInfo,
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.status.online {
+  color: #4aed88;
+}
+
+.status.offline {
+  color: #ff4d4d;
+}
+
+/* === Room ID === */
+.room-id {
+  font-size: 14px;
+  color: #93c5fd;
+  word-break: break-all;
+  margin-top: 10px;
+}
+
+/* === Sidebar Buttons === */
+.sidebar button,
+.sidebar .template-select {
+  background: #1f2937;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.sidebar button:hover,
+.sidebar .template-select:hover {
+  background: #2563eb;
+}
+
+.sidebar .leave {
+  background: #dc2626;
+}
+
+.sidebar .leave:hover {
+  background: #ef4444;
+}
+
+/* === Main Content === */
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* === Editor === */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.editor-container h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #93c5fd;
+}
+
+.editor-box {
+  flex: 1;
+  background: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.editor-box textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  font-family: monospace;
+  font-size: 14px;
+  resize: none;
+}
+
+/* === Preview === */
+.preview {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  color: #111;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.preview h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.preview-box {
+  flex: 1;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  overflow: auto;
+}
+/* === Join Page === */
+.join-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f172a;
+}
+
+.join-card {
+  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #1e293b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.join-card h2 {
+  text-align: center;
+}
+
+.join-card input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #0f172a;
+  color: #fff;
+}
+
+.join-card button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
