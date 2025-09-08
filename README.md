@@ -1,41 +1,78 @@
 
 
-📑 Project Report - Live Code Editor
-Project Title
-Live Code Editor
-________________________________________
-Introduction
-The Live Code Editor is a collaborative platform that enables multiple users to write, edit, and preview code in real time. It provides instant updates across all connected clients, making it suitable for pair programming, coding interviews, and collaborative learning.
-________________________________________
-Project Objectives
-•	Develop a real-time collaborative code editor.
-•	Support multiple users joining and leaving rooms.
-•	Provide instant synchronization of code across all users.
-•	Allow live preview of written code.
-•	Ensure smooth user experience with notifications (join/leave).
-________________________________________
-Technology Stack
-•	Frontend: React.js, CodeMirror, Monaco Editor, React Hot Toast
-•	Backend: Node.js, Express.js, Socket.IO
-•	Styling: CSS, Tailwind
-•	Tools: WebSockets for real-time communication
-________________________________________
-System Features
-•	User can create or join a room using a unique Room ID.
-•	Connected users are displayed in the sidebar.
-•	Users receive notifications when others join or leave.
-•	Live code preview updates instantly as the user types.
-•	Option to switch between Monaco and CodeMirror editors.
-•	Room code is persisted so new users see existing code upon joining.
-________________________________________
-Conclusion
-This project successfully demonstrates a real-time collaborative coding platform. It is useful for developers, students, and educators to collaborate and learn together. Future enhancements may include syntax error highlighting, multi-file support, and integration with cloud storage for persistent project saving.
+📄 Project Report: Live Code Editor
+
+1. Project Title
+
+Live Code Editor with Realtime Collaboration
 
 
 
+2. Introduction
+
+This project is a collaborative live code editor built using React, Node.js, Express, Socket.IO, and MongoDB.
+It allows multiple users to join a shared room and write, edit, and execute code in real-time with instant synchronization across all connected clients.
+
+
+3. Objectives
+
+To build a real-time collaborative code editor.
+
+To allow users to run code in multiple programming languages.
+
+To display connected users in each room.
+
+To provide a simple and interactive user interface.
 
 
 
+4. Technologies Used
+
+Frontend: React.js, CodeMirror, Monaco Editor
+
+Backend: Node.js, Express.js
+
+Realtime Communication: Socket.IO
+
+Database: MongoDB (for room and user management)
+
+Other Tools: GitHub, GitHub Pages (for hosting frontend)
+
+
+
+5. Features
+
+Create and join rooms with unique IDs.
+
+Real-time collaborative editing using Socket.IO.
+
+Support for multiple languages: JavaScript, Python, Java, HTML, CSS, SQL.
+
+Code execution with instant output.
+
+Displays list of connected users.
+
+Switch between CodeMirror and Monaco editor.
+
+Live preview for HTML/CSS/JS code.
+
+
+6. System Architecture
+
+Frontend (React): Provides editor, output panel, and user interface.
+
+Backend (Express + Node): Handles API requests and code execution.
+
+Socket.IO: Manages real-time code synchronization and user events.
+
+Database (MongoDB): Stores user and room data.
+
+
+7. Conclusion
+
+This project demonstrates the integration of real-time communication with collaborative programming.
+It provides an efficient platform for group coding sessions, teaching, and peer learning.
+Future enhancements may include authentication, version control, and cloud-based code execution for enhanced scalability.
 
 
 
